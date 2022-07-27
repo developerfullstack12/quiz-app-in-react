@@ -4,6 +4,7 @@ import { saveProgress , clearStorage} from '../../redux/actions'
 import { useSelector, useDispatch } from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
 import '../../../node_modules/react-toastify/dist/ReactToastify.css';
+import './style.css'
 
 function Home() {
 
@@ -22,9 +23,11 @@ function Home() {
     return (
         <div >
 
-            <h1>You haven't taken quiz yet</h1>
+            <h1>Click on play to start Quiz</h1>
+            <h1>OR</h1>
+            <h1>Reset to try Again</h1>
             <ToastContainer />
-            <button onClick={() =>{ 
+            <button className='btnStyle' onClick={() =>{ 
                 if(store.save_progress){
 notify()
                 }else{
@@ -34,11 +37,11 @@ notify()
                 
                 } }>Play
                 </button>
+            
 
                 <button onClick={() =>{ 
               dispatch( clearStorage())
-               dispatch(saveProgress())
-                
+            //    dispatch(saveProgress())
                 } }>Reset Progress
                 </button>
 

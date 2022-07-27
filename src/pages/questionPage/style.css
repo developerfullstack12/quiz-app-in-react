@@ -11,3 +11,102 @@ background-color: red;
     .pinkBackground{
         background-color: pink;
     }
+    .container-box{
+        max-width: 720px;
+        margin: 0 auto;
+        z-index:5;
+        background-color:#dadff3;
+        background-repeat: no-repeat;
+        position:relative;
+        border-radius: 15px;
+        margin-top: 54px;
+        overflow: hidden;
+    }
+   .container-box:after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    height: 115px;
+    width: 153px;
+    background-size: cover;
+        background-image: url(../../image/download.jpg);
+        background-repeat: no-repeat;
+    } 
+    .container-box-padding{
+        padding: 40px 90px 68px;
+    }
+    .save-progress{
+        /* position:absolute;
+        top:0;
+        right:0; */
+            background-color: #8181e9ba;
+    border: none;
+    padding: 0px 12px;
+    height:32px;
+    color:#fff;
+    margin-left:auto;
+    }
+    .previous-btn{
+   margin-right:auto;
+   padding:10px 10px;
+    border-radius: 5px;
+    min-width:120px;
+    }
+    .btn-for-test{
+        padding-top:30px;
+        display:flex; 
+    }
+    .next-btns{
+   margin-left: auto;
+   padding:10px 10px;
+    border-radius: 5px;
+    min-width:120px;
+}
+.questions{
+    text-align:center;
+}
+.submit-btns{
+    margin: 0 auto;
+    padding:10px 10px;
+    min-width:120px;
+    border-radius: 5px;
+}
+.quzioption{
+    width:50%;
+    display:inline-block;
+    padding: 15px 0;
+}
+.quzioption button{
+    min-width:180px;
+    text-align:left;
+    padding:15px 10px;
+    border-radius: 5px;
+    border:none;
+}
+.brand-icon{
+    margin-top:0;
+    font-size:22px;
+    position: relative;
+    z-index:5;
+    margin-right:auto;
+}
+
+.brand-icon li{
+    width: 34px;
+    top: 0px;
+    list-style: none;
+    height: 36px;
+    z-index: -1;
+    position: absolute;
+    background-color: #0000ff94;
+    border-radius: 50% 9%;
+}
+.brand-icon-head{
+    display:flex;
+
+}
+.brand-icon-head h3{
+    margin: 0 auto;
+}

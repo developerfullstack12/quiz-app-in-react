@@ -49,8 +49,9 @@ export  const counterSlice = createSlice({
       //   data:Data,
       //   save_progress:false
       // }
-      state.save_progress = !(state.save_progress)
-      // localStorage.clear()
+      // state.save_progress = !(state.save_progress)
+      localStorage.clear()
+      window.location.reload()
       // return newState
       
     }
