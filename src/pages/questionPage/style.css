@@ -127,7 +127,30 @@ background-color: red;
     }
 }
 
-@media only screen and  (max-width:600px)  and (min-width:440px){
+@media only screen and  (max-width:500px){
+    .brand-icon-head h5{
+        font-size: 16px;
+    }
+    .brand-icon-head h3{
+font-size: 15px;
+    }
+    .save-progress{
+        padding:1px 2px;    
+        font-size: 12px;    
+    }
+    .container-box-padding {
+        text-align: center;
+        padding: 40px 49px 68px;}
+        .previous-btn ,.next-btns{
+            padding: 5px 1px;
+            min-width: 77px;
+        }
+    
+}
+@media only screen and  (max-width:600px)  and (min-width:220px){
+    .container-box {
+        margin-top: 0;
+    }
     .btn-for-test{
         padding:30px 0;
         display:flex; 

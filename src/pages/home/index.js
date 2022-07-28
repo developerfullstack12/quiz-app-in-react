@@ -28,12 +28,14 @@ function Home() {
 
     return (
         <div >
+            <div className='container-box'>
 
-            <h1>Click on play to start Quiz</h1>
-            <h1>OR</h1>
-            <h1>Reset to try Again</h1>
+            <h1  className=" style-for-text">Click on play to start Quiz</h1>
+            <h1  className=" style-for-text or">OR</h1>
+            <h1   className=" style-for-text">Reset to Play Again</h1>
             <ToastContainer />
-            <button className='btnStyle' onClick={() =>{ 
+            <div className="btn-for-test paddings">
+            <button className='btnStyle previous-btn' onClick={() =>{ 
                 if(store.save_progress){
 notify()
                 }else{
@@ -45,12 +47,14 @@ notify()
                 </button>
             
 
-                <button onClick={() =>{ 
+                <button className="next-btns" onClick={() =>{ 
               dispatch( clearStorage())
             //    dispatch(saveProgress())
                 } }>Reset Progress
                 </button>
+                </div>
 
+        </div>
         </div>
     )
 }

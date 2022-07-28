@@ -1,3 +1,21 @@
 .btnStyle{
     margin-right: 20px;
 }
+.btn-for-test.paddings{
+    padding: 60px 100px;
+}
+.style-for-text{
+    text-align: center;
+    color: #5858e6;
+}
+.style-for-text.or{
+    color:#e24d35
+}
+@media only screen and  (max-width:500px){
+    .style-for-text{
+        font-size: 20px;
+    }  
+    .btn-for-test.paddings {
+        padding: 40px 60px;
+    }
+}
