@@ -55,8 +55,9 @@ background-color: red;
     min-width:120px;
     }
     .btn-for-test{
-        padding-top:30px;
+        padding:30px 0;
         display:flex; 
+        transform: translateX(0%);
     }
     .next-btns{
    margin-left: auto;
@@ -68,7 +69,7 @@ background-color: red;
     text-align:center;
 }
 .submit-btns{
-    margin: 0 auto;
+    margin: 0 48px;
     padding:10px 10px;
     min-width:120px;
     border-radius: 5px;
@@ -77,6 +78,7 @@ background-color: red;
     width:50%;
     display:inline-block;
     padding: 15px 0;
+    transform: translateX(18%);
 }
 .quzioption button{
     min-width:180px;
@@ -109,4 +111,32 @@ background-color: red;
 }
 .brand-icon-head h3{
     margin: 0 auto;
+}
+
+@media only screen and  (max-width:700px)  and (min-width:600px){
+    .btn-for-test{
+        padding:30px 0;
+        display:flex; 
+        transform: translateX(1%);
+    }
+    .quzioption{
+        width:50%;
+        display:inline-block;
+        padding: 15px 0;
+        transform: translateX(10%);
+    }
+}
+
+@media only screen and  (max-width:600px)  and (min-width:440px){
+    .btn-for-test{
+        padding:30px 0;
+        display:flex; 
+        
+    }
+    .quzioption{
+        width:50%;
+        display:block;
+        padding: 15px 0;
+        
+    }
 }

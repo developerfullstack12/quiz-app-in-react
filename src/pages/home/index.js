@@ -17,7 +17,13 @@ function Home() {
 
     React.useEffect(()=> {
 
-        set_save_progress(!save_progress)
+        if( store.save_progress !== false){
+            set_save_progress(true)
+        }else{
+            set_save_progress(false)
+        }
+
+       
     }, store.save_progress)
 
     return (

@@ -38,9 +38,8 @@ export  const counterSlice = createSlice({
       return state
     },
 
-    saveProgress:(state) => {
-      state.save_progress = !(state.save_progress)
-    
+    saveProgress:(state, {payload}) => {
+      state.save_progress = payload
     },
     
     clearStorage:(state) => {
